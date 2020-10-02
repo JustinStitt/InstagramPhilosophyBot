@@ -46,8 +46,8 @@ Login as an Instagram agent using Username and Password and proceed to post our 
 
 ## Some of my personal favorites:
 
-![](/images/documentation_images/fav0.png)
+![](/images/documentation_images/fav0.jpg)
 
-![](/images/documentation_images/fav1.png)
+![](/images/documentation_images/fav1.jpg)
 
-![](/images/documentation_images/fav2.png)
+![](/images/documentation_images/fav2.jpg)
