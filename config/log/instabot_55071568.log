@@ -1,0 +1,19 @@
+2020-10-01 19:49:38,183 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-10-01 19:49:38,183 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\Cptcr\AppData\Local\Programs\Python\Python37-32\lib\site-packages\instabot\bot\bot.py
+2020-10-01 19:49:38,184 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-10-01 19:49:38,184 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-10-01 19:49:38,184 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\Cptcr\Documents\GitHub\InstagramPhilosophyBot/config/Daily_Philosophy_Trend_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=cf7fb49a-f336-4718-87e2-bbe724d52ffd
+- uuid=c1de761b-1ae3-4646-94b4-3c525e9b7027
+- client_session_id=08a97a8e-c057-4dbf-9be3-c0b7ee9edc2e
+- device_id=android-d0665dce0df070f6
+2020-10-01 19:49:38,186 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-10-01 19:49:40,694 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-10-01 19:49:40,950 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-10-01 19:49:40,952 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'Daily_Philosophy_Trend'!
+2020-10-01 19:49:40,953 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\Cptcr\Documents\GitHub\InstagramPhilosophyBot/config/Daily_Philosophy_Trend.checkpoint
+2020-10-01 19:49:44,270 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2020-10-01 19:49:44,270 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'plato.png' is not uploaded.
+2020-10-01 19:49:44,270 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\Cptcr\Documents\GitHub\InstagramPhilosophyBot/config/Daily_Philosophy_Trend.checkpoint
+2020-10-01 19:49:44,271 - instabot version: 0.117.0 (bot) - INFO - Total requests: 31

@@ -1,0 +1,26 @@
+2020-10-02 00:39:16,896 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-10-02 00:39:16,896 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\Cptcr\AppData\Local\Programs\Python\Python37-32\lib\site-packages\instabot\bot\bot.py
+2020-10-02 00:39:20,293 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-10-02 00:39:20,293 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-10-02 00:39:20,293 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\Cptcr\Documents\GitHub\InstagramPhilosophyBot/config/Daily_Philosophy_Trend_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=cf7fb49a-f336-4718-87e2-bbe724d52ffd
+- uuid=c1de761b-1ae3-4646-94b4-3c525e9b7027
+- client_session_id=08a97a8e-c057-4dbf-9be3-c0b7ee9edc2e
+- device_id=android-d0665dce0df070f6
+2020-10-02 00:39:20,294 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-10-02 00:39:20,955 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-10-02 00:39:21,206 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-10-02 00:39:21,348 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2020-10-02 00:39:21,465 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2020-10-02 00:39:21,679 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/inbox/ returned response: <Response [200]>
+2020-10-02 00:39:21,836 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2020-10-02 00:39:22,155 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/?limited_activity=true&show_su=true returned response: <Response [200]>
+2020-10-02 00:39:22,279 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/profile_notice/ returned response: <Response [200]>
+2020-10-02 00:39:22,867 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: discover/explore/ returned response: <Response [200]>
+2020-10-02 00:39:22,868 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'Daily_Philosophy_Trend'!
+2020-10-02 00:39:22,869 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\Cptcr\Documents\GitHub\InstagramPhilosophyBot/config/Daily_Philosophy_Trend.checkpoint
+2020-10-02 00:39:27,173 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2020-10-02 00:39:27,174 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'images/post.png' is not uploaded.
+2020-10-02 00:39:27,175 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\Cptcr\Documents\GitHub\InstagramPhilosophyBot/config/Daily_Philosophy_Trend.checkpoint
+2020-10-02 00:39:27,175 - instabot version: 0.117.0 (bot) - INFO - Total requests: 33
