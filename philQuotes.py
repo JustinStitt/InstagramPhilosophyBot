@@ -14,7 +14,7 @@ import numpy as np
 """
 Instagram Account:
 username: Daily_Philosophy_Trend
-password: ^8,=3Ec.a:j<7\cgG@nWcJS
+password: ^*,=*************J*
 
 random 1:1 high-quality photos: https://source.unsplash.com/random/1080x1080/?nature
 """
