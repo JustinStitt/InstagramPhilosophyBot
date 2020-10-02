@@ -12,9 +12,9 @@ import cv2
 import numpy as np
 
 """
-Instagram Account:
+Philosophy Instagram Account:
 username: Daily_Philosophy_Trend
-password: ^*******************S
+password: ^***********************S
 
 random 1:1 high-quality photos: https://source.unsplash.com/random/1080x1080/?nature
 """
@@ -24,7 +24,7 @@ image_fetch_url = 'https://source.unsplash.com/random/1080x1080/?nature'
 class Agent:
     def __init__(self, _username = '', _password = ''):
         self._username =    'Daily_Philosophy_Trend'
-        self._password =    '^*******************S'
+        self._password =    '^***********************S'
         self.acting    =    instabot.Bot()
     def __repr__(self) -> str:
         return '{username}, {actingAgent}'.format(\
@@ -56,7 +56,8 @@ class Creator:
     def fetchImage(self):
         #remove old image
         rem_path = self.post_path + '.REMOVE_ME'
-        os.remove(rem_path)
+        if(os.path.exists(rem_path)):
+            os.remove(rem_path)
         img_path = self.post_path
         try:
             urllib.request.urlretrieve(image_fetch_url, img_path)
@@ -73,7 +74,7 @@ class Creator:
             if cc >= 26 and text[x-1] == ' ':
                 text = text[:x] + '\n ' + text[x:]
                 cc = 0
-        return text
+        return '“' + text[:-1] + '”'
     def applyVignette(self, some_image_path):
         img = cv2.imread(some_image_path)
         rows, cols = img.shape[:2]
@@ -113,6 +114,10 @@ class Creator:
         draw.text( (draw_pos[0] + border_thickness, draw_pos[1] + border_thickness),\
                         text, (0,0,0), font = _font)#drop shadow
         draw.text(draw_pos, text, (255,255,255), font = _font)#white text
+        _watermark_font = ImageFont.truetype("C:/Windows/fonts/Arial.ttf", 18)
+        watermark = "@Daily_Philosophy_Trend"
+        draw.text((850,1050), watermark, (247,245,251), font = _watermark_font)
+
         to_post.save(self.post_path)
 
         return self.post_path
