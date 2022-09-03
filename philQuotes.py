@@ -59,7 +59,7 @@ class Agent:
 
 class Creator:
     def __init__(self):
-        self.post_path = "images/post.jpg"
+        self.post_path = "../images/post.jpg"
         self.count = 0
 
     def fetchImage(self):
@@ -76,7 +76,7 @@ class Creator:
                     fetch_url=image_fetch_url
                 )
             )
-            img_path = "images/default.jpg"  # fallback if no image is fetched
+            img_path = "../images/default.jpg"  # fallback if no image is fetched
         return img_path
 
     def formatText(self, text):
@@ -140,10 +140,10 @@ class Creator:
 
         to_post.save(self.post_path)
 
-        return self.post_path
+        return to_post
 
     def fetchSentence(self) -> str:
-        input = codecs.open("database/markov_quotes.txt", "r", "utf-16")
+        input = codecs.open("../database/markov_quotes.txt", "r", "utf-16")
         quotes = []
         for line in input.readlines():
             quotes.append(line)
@@ -168,7 +168,8 @@ class Creator:
 def main():
     philAgent = Agent()
     creator = Creator()
-    content = creator.generateContent()  # returns a path to the content to be posted
+    content = creator.generateContent()  # return the imgae to be posted
+    print(content)
     # print(f"Posting: {content}")
     # philAgent.post(content)
 

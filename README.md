@@ -51,3 +51,5 @@ Login as an Instagram agent using Username and Password and proceed to post our 
 ![](/images/documentation_images/fav1.jpg)
 
 ![](/images/documentation_images/fav2.jpg)
+
+![](/images/documentation_images/add1.jpg)
