@@ -35,3 +35,6 @@ class GetImage(Resource):
 
 api.add_resource(GetImage, "/getimage")
 api.add_resource(HelloWorld, "/")
+
+if __name__ == "__main__":
+    app.run()
