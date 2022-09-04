@@ -1,14 +1,12 @@
-import instabot  # for creating an agent to post images to instagram
 from PIL import Image  # use pillows image library
 from PIL import ImageFont  # create pillow compatible font
 from PIL import ImageDraw  # overlay font onto image
 from PIL import ImageFilter  # blur image
-import os.path
-from os import path
+import os
 import urllib
 import random
 import codecs
-import cv2
+from cv2 import imread, getGaussianKernel, imwrite
 import numpy as np
 
 """
@@ -59,7 +57,7 @@ class Agent:
 
 class Creator:
     def __init__(self):
-        self.post_path = "../images/post.jpg"
+        self.post_path = "post.jpg"
         self.count = 0
 
     def fetchImage(self):
@@ -76,7 +74,7 @@ class Creator:
                     fetch_url=image_fetch_url
                 )
             )
-            img_path = "../images/default.jpg"  # fallback if no image is fetched
+            img_path = "default.jpg"  # fallback if no image is fetched
         return img_path
 
     def formatText(self, text):
@@ -90,18 +88,18 @@ class Creator:
         return "“" + text[:-1] + "”"
 
     def applyVignette(self, some_image_path):
-        img = cv2.imread(some_image_path)
+        img = imread(some_image_path)
         rows, cols = img.shape[:2]
         # generating vignette mask using Gaussian kernels
-        kernel_x = cv2.getGaussianKernel(cols, 255)
-        kernel_y = cv2.getGaussianKernel(rows, 255)
+        kernel_x = getGaussianKernel(cols, 255)
+        kernel_y = getGaussianKernel(rows, 255)
         kernel = kernel_y * kernel_x.T
         mask = 400 * kernel / np.linalg.norm(kernel)
         output = np.copy(img)
         # applying the mask to each channel in the input image
         for i in range(3):
             output[:, :, i] = output[:, :, i] * mask
-        cv2.imwrite(some_image_path, output)
+        imwrite(some_image_path, output)
         ret_img = Image.open(some_image_path)
         return ret_img
 
@@ -143,7 +141,7 @@ class Creator:
         return to_post
 
     def fetchSentence(self) -> str:
-        input = codecs.open("../database/markov_quotes.txt", "r", "utf-16")
+        input = codecs.open("database/markov_quotes.txt", "r", "utf-16")
         quotes = []
         for line in input.readlines():
             quotes.append(line)

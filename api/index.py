@@ -3,12 +3,9 @@ import json
 import base64
 from io import BytesIO
 import numpy as np
-from PIL import Image
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 from flask_cors import CORS
-
-sys.path.append("../")
 from philQuotes import Creator
 
 app = Flask(__name__)
