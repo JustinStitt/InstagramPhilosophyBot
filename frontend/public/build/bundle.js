@@ -708,7 +708,7 @@ var app = (function () {
     			attr_dev(img, "alt", "Philosophy Quote");
     			attr_dev(img, "width", "512");
     			attr_dev(img, "height", "512");
-    			add_location(img, file, 26, 2, 584);
+    			add_location(img, file, 26, 2, 592);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -760,11 +760,11 @@ var app = (function () {
     			t4 = space();
     			if (if_block1) if_block1.c();
     			attr_dev(h1, "class", "svelte-l19o3m");
-    			add_location(h1, file, 20, 1, 424);
+    			add_location(h1, file, 20, 1, 432);
     			attr_dev(button, "class", "submit");
-    			add_location(button, file, 21, 1, 449);
+    			add_location(button, file, 21, 1, 457);
     			attr_dev(div, "class", "main svelte-l19o3m");
-    			add_location(div, file, 19, 0, 404);
+    			add_location(div, file, 19, 0, 412);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -856,7 +856,7 @@ var app = (function () {
     	async function fetchImage() {
     		$$invalidate(1, loading = true);
 
-    		await fetch("http://127.0.0.1:5000/getimage").then(response => {
+    		await fetch("https://api.cryptoclicker.org/getimage").then(response => {
     			return response.json();
     		}).then(data => {
     			$$invalidate(1, loading = false);
