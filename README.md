@@ -1,4 +1,10 @@
 # InstagramPhilosophyBot
+
+### 09/04/2022 Frontend Update
+
+The instagram bot account got banned so I made a web frontend instead.
+[Check it out!](philosophy-ai.vercel.app)
+
 Generates a random philosophical quote using a Markov chain I wrote in C++ then scrapes
 the web for a random photo. The text is overlayed then the image is posted to Instagram using a bot.
 
