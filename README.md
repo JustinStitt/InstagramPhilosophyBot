@@ -59,3 +59,10 @@ Login as an Instagram agent using Username and Password and proceed to post our 
 ![](/images/documentation_images/fav2.jpg)
 
 ![](/images/documentation_images/add1.jpg)
+
+![](/favorites/7.png)
+![](/favorites/8.png)
+![](/favorites/9.png)
+![](/favorites/10.png)
+![](/favorites/11.png)
+![](/favorites/12.png)
