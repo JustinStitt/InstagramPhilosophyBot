@@ -5,10 +5,13 @@ from io import BytesIO
 import numpy as np
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
+from flask_cors import CORS
+
 from philQuotes import Creator
 
-app = Flask(__name__)
-api = Api(app)
+application = Flask(__name__)
+CORS(application, resources={r"*": {"origins": "*"}})
+api = Api(application)
 
 
 class HelloWorld(Resource):
@@ -29,10 +32,12 @@ class GetImage(Resource):
             {"message": "request made", "content": content_base64.decode("utf-8")}
         )
         return response
+        # return {"Hello": " philosophy api!"}
 
 
 api.add_resource(GetImage, "/getimage")
 api.add_resource(HelloWorld, "/")
 
 if __name__ == "__main__":
-    app.run()
+    # application.debug = True
+    application.run()

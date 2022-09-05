@@ -122,7 +122,7 @@ class Creator:
 
         reduce = 65 // 7
         font_size -= reduce
-        _font = ImageFont.truetype("DejaVuSans.ttf", font_size)
+        _font = ImageFont.truetype("./DejaVuSans.ttf", font_size)
         # _font = ImageFont.load_default()
         text = self.formatText(text)
         draw.text(
