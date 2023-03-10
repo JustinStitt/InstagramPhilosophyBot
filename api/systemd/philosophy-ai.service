@@ -1,0 +1,12 @@
+[Unit]
+Description=Philosophy AI Running W/ Flask + Gunicorn + Caddy
+[Install]
+WantedBy=multi-user.target
+[Service]
+Type=simple
+User=jstitt007
+PermissionsStartOnly=true
+WorkingDirectory=/home/jstitt007/repos/InstagramPhilosophyBot/api
+ExecStart=/home/jstitt007/repos/InstagramPhilosophyBot/api/venv/bin/gunicorn -w 1 -b 127.0.0.1:5001 wsgi:application
+Restart=on-failure
+TimeoutSec=600
